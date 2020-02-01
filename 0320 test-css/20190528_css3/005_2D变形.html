@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>2D变形</title>
+		<style type="text/css">
+			.box1 {
+				width: 200px;
+				border: 1px solid #000000;
+			}
+			.box1 img {
+				/*转块级元素，图片去掉间隙*/
+				display: block;
+				width: 200px;
+				/*过渡一般配合其他属性使用，参数含义-属性，时间，缓冲描述，延迟*/
+				transition: all 3s linear 1s;
+			}
+			.box1:hover img {
+				/*旋转 坐标变化*/
+				transform: rotate(30deg) translate(600px,300px);	
+			}
+			
+			
+			.box2 {
+				width: 200px;
+				height: 200px;
+				border: 1px solid #000000;
+			}
+			.box2 img {
+				/*转块级元素，图片去掉间隙*/
+				display: block;
+				width: 200px;
+				/*过渡一般配合其他属性使用，参数含义-属性，时间，缓冲描述，延迟*/
+				transition: all 3s linear 1s;
+			}
+			.box2:hover img {
+				/*缩小0-1之间*/
+				transform: scale(0.5);
+			}
+			
+			
+			.box3 {
+				width: 200px;
+				border: 1px solid #000000;
+				overflow: hidden;
+			}
+			.box3 img {
+				/*转块级元素，图片去掉间隙*/
+				display: block;
+				width: 200px;
+				/*过渡一般配合其他属性使用，参数含义-属性，时间，缓冲描述，延迟*/
+				transition: all 3s linear 1s;
+			}
+			.box3:hover img {
+				/*放大1-+之间*/
+				transform: scale(1.2);
+			}
+			
+			
+			.box4 {
+				width: 200px;
+				border: 1px solid #000000;
+			}
+			.box4 img {
+				/*转块级元素，图片去掉间隙*/
+				display: block;
+				width: 200px;
+				/*过渡一般配合其他属性使用，参数含义-属性，时间，缓冲描述，延迟*/
+				transition: all 3s linear 1s;
+			}
+			.box4:hover img {
+				/*斜切（水平，垂直）*/
+				transform: skew(50deg,10deg);
+			}
+			
+			
+			.box5 {
+				width: 200px;
+				border: 1px solid #000000;
+			}
+			.box5 img {
+				/*转块级元素，图片去掉间隙*/
+				display: block;
+				width: 200px;
+				/*过渡一般配合其他属性使用，参数含义-属性，时间，缓冲描述，延迟*/
+				transition: all 3s linear 1s;
+			}
+			.box5:hover img {
+				/*移动（水平，垂直）*/
+				transform: translate(-300px,200px);
+			}
+			
+			
+			div {
+				float: left;
+				margin: 30px 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<img src="../img/a01.jpg" />
+		</div>
+		
+		<div class="box2">
+			<img src="../img/a01.jpg" />
+		</div>
+		
+		<div class="box3">
+			<img src="../img/a01.jpg" />
+		</div>
+		
+		<div class="box4">
+			<img src="../img/a01.jpg" />
+		</div>
+		
+		<div class="box5">
+			<img src="../img/a01.jpg" />
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>test001</title>
+	</head>
+	<body> 
+		<!--表的建立；表格居中，表格边线的粗细，文本与表格之间的内左上边距，外边框与内边框间距，表格宽度-->
+		<table align="center" border="1" cellpadding="5" cellspacing="0" width="500px"> 
+			
+			<thead>     <!--固定表格标题部分（与代码所在位置无关）-->
+				<tr align="center" bgcolor="chocolate">        <!--第一行；行内文本居中，行内背景色-->
+				    <td><font color="wheat">姓名</font></td>       <!--第 一行第一列；内部文本颜色-->
+				    <td><font color="wheat">四级成绩</font></td>    <!--第一行第二列-->
+				    <td><font color="wheat">六级成绩</font></td>    <!--第一行第三列-->
+				    <th>备注信息</th>          <!--第一行第四列，th以标题形式显示--> 
+			    </tr>
+			</thead>
+			
+			<tbody>   <!--固定表格主体部分--> 
+				<tr align="center">        <!--第二行-->
+				    <td>李一</td>
+				    <td>426</td>
+				    <td>430</td>
+				    <td rowspan="4">备注内容</td>     <!--此格占3行（即纵向合并单元格）-->
+			    </tr>
+			    <tr align="center">         <!--第三行-->
+			        <td>于二</td>
+				    <td>500</td>
+				    <td>490</td>
+			    </tr>
+			    <tr align="center">          <!--第四行-->
+				    <td>张三</td>
+				    <td>600</td>
+				    <td>500</td>
+			    </tr>
+			</tbody>
+			
+			<tfoot>     <!--固定表格尾部部分-->  
+				<tr>                         <!-- 第五行-->
+					<!--此格占4列（即横向合并单元格），文本右对齐-->
+				    <td colspan="4" align="right">人数总计：3人</td>
+				    
+			    </tr>
+			</tfoot>
+		</table>
+		
+	</body>
+</html>

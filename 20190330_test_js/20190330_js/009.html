@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//定义数组方式
+			var aa=new Array(5);  
+			var bb=new Array();
+			var cc=new Array(10,20,30,40);
+			//为数组中单个赋值
+			aa[0]=10; 
+			aa[2]=20;
+			aa[4]=30;
+			//单个输出数组中的值
+			document.write(aa[0]+"<br />");
+			document.write(aa[1]+"<br />");
+			document.write(aa[2]+"<br />");
+			document.write(aa[3]+"<br />");
+			document.write(aa[4]+"<br />");
+			
+			//数组属性：push 给数组末尾添加元素
+			aa.push(100,300);  
+			
+			//循环输出数组中的值
+			for(var i=0;i<aa.length;i++){ 
+				document.write(aa[i]+"<br />");
+			}
+			
+			
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

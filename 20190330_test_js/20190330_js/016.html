@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//定义函数，取得n1输入框中的值，并输出
+			function testGet(){
+				var n1=document.getElementById("n1").value;
+				alert(n1);
+			}
+			
+			//定义函数，取得n1框中的值，取得n2输入框，并将n1中的文本赋值给输入框n2
+			function testSet(){
+				var n1=document.getElementById("n1").value;
+				var n2=document.getElementById("n2");
+				n2.value=n1;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input id="n1" />
+		<input id="n2" />
+		<button onclick="testGet()">get</button>
+		<button onclick="testSet()">set</button>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+.body{
+	width: 990px;
+	height: 1680px;
+	margin: auto;
+	margin-top: 3px;
+}
+.centre_href{
+	color: white;
+	text-decoration: none;
+}
+
+.textLeft a:hover{
+	color: darkviolet;
+}
+.sphead_title a:hover{
+	color: darkviolet;
+}
+.textCentre a:hover{
+	color: darkviolet;
+}
+.textRight a:hover{
+	color: darkviolet;
+}
+
+

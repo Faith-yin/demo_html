@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js基础第1天作业</title>
+		<script type="text/javascript">
+			//1.计算住房公积金
+			var a = prompt("请输入你的税前工资：","");
+			var b = a * 0.1 * 2;
+			console.log("你的住房公资金是："+b);
+			
+			//2.计算以下算式：((23+5^7)/45)^2
+			var c = Math.pow(((23 + Math.pow(5,7)) / 45),2)
+			console.log("结果是："+c);
+			
+			//3.输出圆锥的体积
+			var d = prompt("圆锥的底面半径是：","");
+			var e = prompt("圆锥的高是：","");
+			var f = 1/3 * Math.PI * Math.pow(d,2) * e;
+			alert("圆锥的体积是："+f);
+			
+			//4.如果今天是周五，则g天后是周几
+			var g = prompt("请输入天数：","");
+			var h = g % 7;
+			//如果余数大于7，再次除余7
+			var i = (h + 5) % 7;
+			if (i == 0) {
+				console.log(g+"天后是周日");
+			} else{
+				console.log(g+"天后是周"+i);
+			}
+			
+			//5.输入一个三位数，弹出各个数位的和
+			var j = prompt("请输入一个三位数：","");
+			//获取个位数
+			var k = j % 10;
+			//获取十位数并转换为整型
+			var m = parseInt((j / 10) % 10);
+			//获取百位数并转换为整型
+			var l = parseInt(j / 100);
+			//获取各个位数之和
+			var n = k + l + m;
+			alert("各位数之和是："+n);
+			
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

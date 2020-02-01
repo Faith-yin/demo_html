@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 80px;
+				height: 80px;
+			}
+			table{
+				width: 500px;
+				/*表格内文本居中*/
+				text-align: center;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			//勾选全部框函数
+			function testAll(obj){
+				//获取勾选框
+				var cbs=document.getElementsByName("cb");
+				if(obj.checked){ //若此框勾选
+					for (var i=0;i<cbs.length;i++) {
+						cbs[i].checked="checked";
+					}		
+				}else{
+					for (var i=0;i<cbs.length;i++) {
+						cbs[i].checked="";
+					}
+				}
+			}
+			
+			//计算总价函数
+			function testSum(){
+				var cbs=document.getElementsByName("cb");
+				//获取单价和数量的每个表格
+				var ps=document.getElementsByName("price");
+				var cs=document.getElementsByName("count");
+				var sum=0;
+				for (var i=0;i<ps.length;i++) {
+					if(cbs[i].checked){ //若此勾选框已勾选
+						//将单价和数量表格中的值进行计算
+						sum=sum+ps[i].innerHTML*cs[i].innerHTML;
+					}
+				}
+				alert(sum);
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="testSum()">计算总价</button>
+		<table>
+			<tr> <!--表格第一行-->
+				<td><input type="checkbox" onchange="testAll(this)" />全选</td>
+				<td>图片</td>
+				<td>单价</td>
+				<td>数量</td>
+			</tr>
+			
+			<tr> <!--表格第二行-->
+				<td><input type="checkbox" name="cb" /></td>
+				<td><img src="../img/a01.jpg"></td>
+				<td name="price">50</td>
+				<td name="count">2</td>
+			</tr>
+			
+			<tr> <!--表格第三行-->
+				<td><input type="checkbox" name="cb" /></td>
+				<td><img src="../img/a02.jpg"></td>
+				<td name="price">100</td>
+				<td name="count">3</td>
+			</tr>
+			
+			<tr> <!--表格第四行-->
+				<td><input type="checkbox" name="cb" /></td>
+				<td><img src="../img/a03.jpg"></td>
+				<td name="price">500</td>
+				<td name="count">1</td>
+			</tr>
+		</table>
+	</body>
+</html>

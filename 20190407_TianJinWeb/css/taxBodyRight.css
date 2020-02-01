@@ -1,0 +1,258 @@
+.bodyRight{
+	width: 23.58%;
+	height: 100%;
+	float: left;
+}
+
+
+/*日期时间部分*/
+.right_date{
+	width: 100%;
+	height: 80px;
+	border-radius: 5px 5px 0 0 ;/*设置边框半径值,上左 上右 下右 下左*/
+	padding-top: 15px;
+	background-color: #bd0a05;
+}
+.date_line1{
+	width: 85%;
+	height: 28%;
+	margin-left: 20px;
+	line-height: 24px; /*设置行高,使内部文本垂直居中*/
+}
+#line1_year{
+	width: 28%;
+	height: 24px;
+	text-align: center;
+	letter-spacing: 2px;  /*设置文本之间距离*/
+	float: left;
+	background-color: white;
+}
+#line1_month{
+	width: 15%;
+	height: 24px;
+	text-align: center;
+	letter-spacing: 2px;
+	float: left;
+	background-color: white;
+}
+#line1_day{
+	width: 15%;
+	height: 24px;
+	text-align: center;
+	letter-spacing: 2px;
+	float: left;
+	background-color: white;
+}
+.line1_yearc,.line1_monthc,.line1_dayc{
+	margin-left: 1.1px;
+	margin-right: 1.1px;
+	float: left;
+}
+.date_line2{
+	width: 85%;
+	height: 28%;
+	margin-left: 20px;
+	line-height: 24px;
+	margin-top: 15px;
+}
+.line2_weekc{
+	width: 42px;
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+}
+#line2_week{
+	width: 15%;
+	height: 24px;
+	text-align: center;
+	margin-right: 12px;
+	float: left;
+	background-color: white;
+}
+#line2_time{
+	width: 52%;
+	height: 24px;
+	text-align: center;
+	letter-spacing: 3px;
+	float: left;
+	background-color: white;
+}
+
+
+/*局内邮箱登录*/
+.right_login{
+	width: 100%;
+	height: 160px;
+	margin-top: 3px;
+}
+.login_title{
+	width: 100%;
+	height: 35px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #656570;
+}
+.login_text{
+	width: 100%;
+	height: 125px;
+	background-color: #7c7c89;
+}
+.login_text_line1{
+	width: 80%;
+	margin-top: 20px;
+	margin-left: 18px;
+	float: left;
+}
+.name,.passwd{
+	width: 30%;
+	float: left;
+}
+.nameInput,.passwdInput{
+	width: 70%;
+	float: left;
+}
+#nameInput,#passwdInput{
+	width: 130px;
+}
+.login_text_line2{
+	width: 80%;
+	margin-top: 10px;
+	margin-left: 18px;
+	float: left;
+}
+#loginButton{ /*按钮属性样式*/
+	margin-left: 80px;
+	margin-top:10px ;
+	border-width: 3px; /*边框宽度*/
+	border-color: #d31c0c; /*边框颜色*/
+	width: 90px;  /* 宽度 */
+	height: 30px; /* 高度 */
+	background: #9d0420;  /*背景颜色*/
+	
+}
+
+
+/*教育培训*/
+.right_edu{ 
+	width: 100%;
+	height: 805px;
+	margin-top: 3px;
+}
+.edu_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #473b77;
+}
+.edu_line_left{
+	width: 3px;
+	height: 760px;
+	float: left;
+	background-color: #473b77;
+}
+.edu_line_right{
+	width: 2px;
+	height: 760px;
+	margin-left: 99.1%;
+	background-color: #473b77;
+}
+.edu_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #473b77;
+}
+.edu_text{
+	width: 95%;
+	height: 90%;
+	padding-top: 15px;
+	float: left;
+}
+.edu_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+	margin-bottom: 1px;
+}
+
+
+/*文娱长廊*/
+.right_culture{ 
+	width: 100%;
+	height: 565px;
+	margin-top: 6px;
+}
+.culture_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #473b77;
+}
+.culture_line_left{
+	width: 3px;
+	height: 520px;
+	float: left;
+	background-color: #473b77;
+}
+.culture_line_right{
+	width: 2px;
+	height: 520px;
+	margin-left: 99.1%;
+	background-color: #473b77;
+}
+.culture_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #473b77;
+}
+.culture_text{
+	width: 95%;
+	height: 90%;
+	padding-top: 15px;
+	float: left;
+}
+.culture_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+	margin-bottom: 1px;
+}
+
+
+
+
+/*公共元素样式*/
+.textRight{
+	margin-top: 10px;
+	margin-left: 20px;
+	line-height: 25px; /*行高等于div高度,文本垂直居中*/
+	color: white;
+	float: left;
+}
+
+.smoreR{
+	padding-top: 24px;
+	padding-left: 190px;
+	
+}
+.moreR{
+	color: white;
+	font-size: small;
+}
+
+.text_1,.text_2,.text_3,.text_4{ 
+	margin-left: 8px;
+	font-weight: bold;
+	font-family: "宋体";
+	float: left;
+}
+
+.li_maintextRH{
+	height: 30px; /*设置行高度*/
+	white-space:nowrap;  /*规定文本中的内容不进行换行*/
+	text-overflow: ellipsis; /*当对象内文本溢出时显示省略标记（...）*/
+	overflow: hidden; /*把多出的地方隐藏掉*/
+	list-style-position: inside; /*列表项目标记放置在文本以内，且环绕文本根据标记对齐*/
+}
+
+

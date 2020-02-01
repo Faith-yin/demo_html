@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>通过background-position获取其中小图</title>
+		<style type="text/css">
+			.box1 {
+				/*限制盒子宽高*/
+				width: 60px;
+				height: 17px;
+				border: 1px solid #000;
+				/*通过background-position获取小图*/
+				background: url(../img/icons.png) 0 -769px;
+			}
+			.box2 {
+				margin-top: 20px;
+				/*宽高减半*/
+				width: 30px;
+				height: 8.5px;
+				border: 1px solid #000000;
+				/*位置减半*/
+				background: url(../img/icons.png) 0 -384.5px;
+				/*背景减半*/
+				background-size: 110px 449px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+	</body>
+</html>

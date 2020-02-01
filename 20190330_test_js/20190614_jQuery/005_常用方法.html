@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>005</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			p {
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				margin-bottom: 10px;
+			}
+			.teshu {
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>1</p>
+		<p>2</p>
+		<p class="teshu">3</p>
+
+		
+		
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			//输出所有p标签的个数
+			console.log($("p").length);
+			
+			
+			//读取teshu元素的width
+			console.log($("p.teshu").css("width"));
+			
+			
+			//设置单一属性
+			/*$(".teshu").css("background-color","#FF7F50");
+			$(".teshu").css("width","150px");
+			$(".teshu").css("height","150px");*/
+			
+			//设置多个属性
+			$(".teshu").css({
+				"width":"300px",
+				"height":"300px",
+				"backgroundColor":"blue"
+			})
+			
+		</script>
+	</body>
+</html>

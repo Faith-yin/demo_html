@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="div_time"></div>
+		
+		<script type="text/javascript">
+			//获取系统时间
+			function getMyTime(){
+				var now=new Date();
+				var y=now.getFullYear();
+				var m=now.getMonth();
+				var d=now.getDate();
+				var h=now.getHours();
+				var min=now.getMinutes();
+				var s=now.getSeconds();
+				return "当前时间："+y+"年"+m+"月"+d+"日"+h+"："+min+"："+s;
+				
+			}
+			
+			function setDiv(){
+				//将函数getMyTime返回值赋给str
+				var str=getMyTime();
+				//将str赋给获取到的div内容中
+				document.getElementById("div_time").innerHTML=str;
+				
+			}
+			
+			//每隔1000ms执行setDiv函数一次
+			setInterval("setDiv()",1000);
+			//setTimeout()表示函数只执行setDiv一次
+			//setTimeout("setDiv()",1000);
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>02.jquery体会</title>
+		<style type="text/css">
+			p {
+				width: 100px;
+				height: 100px;
+				margin-bottom: 10px;
+				background-color: deeppink;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="box">
+			<ul>
+				<li class="l01"><a href="">我是a标签</a></li>
+				<li><a href="">我是a标签</a></li>
+				<li><a href="">我是a标签</a></li>
+			</ul>
+		</div>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			//使用js获取元素并改变颜色
+			var a = document.getElementById("box").getElementsByTagName("a")[2];
+			a.style.color = "orangered";
+			
+			//jquery简化了元素的选择：使用jquery获取元素并改变颜色
+			$("#box ul li.l01 a").css("color","blue");
+			
+			//jquery简化了元素的运动：使用jquery获取元素并设置运动
+			$("p").animate({"left":500},2000);
+			
+		</script>
+	</body>
+</html>

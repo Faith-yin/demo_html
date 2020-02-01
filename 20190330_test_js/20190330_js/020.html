@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var cc;
+			function testFocus(){
+				//将cc赋值给id(t02)文本框
+				document.getElementById("t02").value=cc;
+			}
+			
+			function testClear(obj){
+				//将文本框中的内容赋给cc
+				cc=obj.value;
+				//赋值为空
+				obj.value="";
+			}
+		</script>
+	</head>
+	<body>
+		<!--失去焦点事件-->
+		<input id="t01" onblur="testClear(this)" />
+		<!--获取焦点事件-->
+		<input id="t02" onfocus="testFocus()" />
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: #FFD700;
+				border: 1px white solid;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			function testMul(){
+				//通过name获取多个div
+				var dd=document.getElementsByName("dd");
+				for(var i=0;i<dd.length;i++){
+					//用js书写css样式，加style关键字
+					dd[i].style.visibility="hidden";
+				}
+			}
+			
+			function testTagName(){
+				//通过标签名获取所有div
+				var dd=document.getElementsByTagName("div");
+				for(var i=0;i<dd.length;i++){
+					//用js书写css样式，加style关键字
+					dd[i].style.visibility="hidden";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="testMul()">测试1</button>
+		<button onclick="testTagName()">测试2</button>
+		<div name="dd"></div>
+		<div name="dd"></div>
+		<div name="dd"></div>
+		<div class="aa"></div>
+		<div class="aa"></div>
+		<div></div>
+		
+		
+		
+		<img src="../img/document对象常用方法.png" width="700px" height="500px" />
+	</body>
+</html>

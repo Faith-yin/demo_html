@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			//求和函数
+			function testSum(){
+				var n1=document.getElementById("n1").value;
+				var n2=document.getElementById("n2").value;
+				var num1=parseFloat(n1);
+				var num2=parseFloat(n2);
+				//返回两数和
+				return num1+num2;
+			}
+			
+			//显示两数和的函数，调用testSum函数返回值，实现函数重用
+			function showSum(){
+				var ss=testSum();
+				alert(ss);
+			}
+			
+			////显示两数平均值的函数，调用testSum函数返回值，实现函数重用
+			function showAvg(){
+				var ss=testSum();
+				alert(ss/2);
+			}
+		</script>
+	</head>
+	<body>
+		<input id="n1" />
+		<input id="n2" />
+		<button onclick="showSum()">求和</button>
+		<button onclick="showAvg()">平均值</button>
+		
+	</body>
+</html>

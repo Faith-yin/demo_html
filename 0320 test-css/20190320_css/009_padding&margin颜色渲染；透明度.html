@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>009：颜色会渲染padding，但不会渲染margin；透明度属性</title>
+		<style type="text/css">
+			.box1 {
+				width: 200px;
+				height: 200px;
+				margin: 5px;
+				background-color: orange;
+				border: 1px solid #000;
+			}
+			.box2 {
+				width: 200px;
+				height: 200px;
+				padding: 5px;
+				background-color: green;
+				border: 1px solid #000;
+			}
+			div:hover {
+				/*透明度属性：值越小，使得元素更加透明*/
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">1 margin</div>
+		<div class="box2">2 padding</div>
+	</body>
+</html>

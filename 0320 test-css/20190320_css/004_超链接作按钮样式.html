@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>004</title>
+		<style type="text/css">
+			#ul_title{
+				list-style: none;  /*去掉超链接前面的圆点*/
+				padding-left: 0px;    /*内左边距*/
+				margin-top: 0px;      /*外上边距*/
+			}
+			#ul_title li a:link,li a:visited{
+				text-decoration: none;   /*去掉下划线*/
+				color: white;   
+				width: 120px;
+				height: 40px;
+				background: #FFA500;   /*背景颜色*/
+				display: block;   /*将内联元素调成块级元素*/
+				border: 1px solid white;/*设置边框线，1像素，实线，红色*/
+				text-align: center;
+				line-height: 40px;   /*文本行高设置块高度可上下居中*/
+				font-weight: bold;  /*加粗字体*/
+			}
+			#ul_title li a:hover{
+				background: red;
+			}
+			#ul_title li{
+				float: left;   /*块级元素左对齐*/
+			}
+			
+			</style>
+	</head>
+	<body>
+		<ul id="ul_title">
+			<li>    <!--超链接前面加圆点-->
+				<a href="http://www.baidu.com">百度</a>
+			</li>
+			<li>
+				<a href="http://www.qq.com">新闻动态</a>
+			</li>
+			<li>
+				<a href="http://www.sina.com">新浪邮箱</a>
+			</li>
+			<li>
+				<a href="http://www.taobao.com">淘宝购物</a>
+			</li>
+		</ul>
+	</body>
+</html>

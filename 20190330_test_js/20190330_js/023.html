@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function testShow(){
+				//获取图片对象
+				var m1=document.getElementById("m1");
+				//设置src路径
+				m1.src="img/a01.jpg";
+			}
+			
+			function testHidde(){
+				var m1=document.getElementById("m1");
+				m1.src="";
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="testShow()">显示</button>
+		<button onclick="testHidde()">隐藏</button>
+		<br />
+		<img id="m1" src="../img/a01.jpg" />
+	</body>
+</html>

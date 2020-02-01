@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			#d01{
+				background-color: coral;
+			}
+			#d02{
+				background-color: deeppink;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			
+			function testSet(){
+				var d01=document.getElementById("d01").innerHTML;
+				//将div（d01）中取得的内容赋值给div（d02）
+				document.getElementById("d02").innerHTML=d01;
+				
+			}
+			
+			function testClear(){
+				//鼠标移走之后，将div（d02）赋值为空
+				document.getElementById("d02").innerHTML="";
+
+			}
+		</script>
+	</head>
+	<body>
+		<div id="d01">Hello,DIV!</div>
+		<!--鼠标悬停事件，鼠标移走事件-->
+		<div id="d02" onmousemove="testSet()" onmouseout="testClear()"></div>
+	</body>
+</html>

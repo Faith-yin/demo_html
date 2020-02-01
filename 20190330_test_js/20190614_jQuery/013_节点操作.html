@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>013</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.box {
+				width: 700px;
+				height: 180px;
+				border: 1px solid #000000;
+				margin: 10px auto;
+			}
+			p {
+				width: 150px;
+				height: 150px;
+				margin: 10px 10px;
+				float: left;
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			/* 在jquery中有三个是不需要加双引号的：
+			 *   $(this)    $(document)   $(window)
+			 */
+			
+			
+			//点击哪个p让哪个背景色改变
+			/*$("p").click(function() {
+				$(this).css("background-color","mediumpurple");
+			})*/
+			
+			//点击哪个p让它的父节点背景色改变
+			/*$("p").click(function() {
+				$(this).parent().css("background-color","mediumpurple");
+			})*/
+			
+			//点击哪个p让它的兄弟节点背景色改变
+			/*$("p").click(function() {
+				$(this).siblings().css("background-color","mediumpurple");
+			})*/
+			
+			//点击哪个p让它的子节点背景色改变
+			//第一种写法
+			$("div").click(function() {
+				$(this).children().css("background-color","mediumpurple");
+			})
+			//第二种写法，推荐使用规范
+			/*$(function() {
+				$("div").click(function() {
+					$(this).children().css("background-color","mediumpurple");
+				});
+			});*/
+			
+			
+			/* 不常用的节点操作：
+			 *   next()：选中下一个兄弟节点
+			 *   nextAll()：后面所有的兄弟
+			 *   prev()：选中上一个兄弟
+			 *   preAll()：前面所有的兄弟
+			 *   parents()：祖先节点，也可以传递指定父节点
+			 *   find()：选中所有后代节点，也可以传递指定节点
+			 */
+			
+		</script>
+	</body>
+</html>

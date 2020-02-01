@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>003</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#box {
+				width: 500px;
+				height: 500px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" tabindex="3"></div>
+		<input type="text" id="inp" tabindex="1" />
+		
+		
+		<script type="text/javascript">
+			/* 如果要给document添加onkeydown事件，直接添加即可
+			 * 如果要给一个div元素添加onkeydown事件,要想办法让div获取焦点
+			 * 获取焦点的方式就是给div添加tabindex属性
+			 */
+			  
+			
+			
+			/*tabindex ：该属性是html的标准属性
+			 * 页面中的元素有很多，当用户失去鼠标的时候，可以通过键盘上的tab键来选择元素
+			 * 按下tab键是按照顺序来获取元素焦点
+			 * 按下shift是逆顺序来获取元素的焦点
+			 * tabindex的属性决定了按下了tab键的获取顺序
+			 */
+			
+			//获取元素
+			var box = document.getElementById("box");
+			var inp = document.getElementById("inp");
+			
+			//添加onkeydown事件
+			box.onkeydown = function() {
+				console.log("键盘按下了")
+			}
+			
+			//获取焦点
+			inp.onfocus = function() {
+				console.log("获取焦点")
+			}
+			
+			//失去焦点
+			inp.onblur = function() {
+				console.log("失去焦点");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function printHello(num,name){//形参num，name
+				for (var i=1;i<=num;i++) {
+					document.write("Hello,"+name+"<br />")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input id="d01" />
+		<!--定义点击事件，调用函数，传递两个实参-->
+		<button onclick="printHello(document.getElementById('d01').value,'张三')">show</button>
+	</body>
+</html>

@@ -1,0 +1,335 @@
+.bodyCentre{
+	width: 50%;
+	height: 100%;
+	float: left;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+/*头题与图片、说明部分   */
+.centre_head{
+	width: 100%;
+	height: 325px;
+}
+.head_title{
+	position: relative;  /*相对定位,将依据top，right，bottom，left等属性在正常文档流中偏移位置*/
+	width: 100%;
+	height: 45px;
+}
+.head_title1{
+	width: 33%;
+	height: 39px;
+	border-radius: 5px 5px 0 0 ;
+	text-align: center;
+	float: left;
+	background-color: #bd0a05;
+}
+.head_title2{
+	width: 33%;
+	height: 35px;
+	border-radius: 5px 5px 0 0 ;
+	margin-left: 4px;
+	text-align: center;
+	float: left;
+	background-color: #bd0a05;
+}
+.head_title3{
+	width: 33%;
+	height: 35px;
+	border-radius: 5px 5px 0 0 ;
+	text-align: center;
+	float: right;
+	background-color: #bd0a05;
+}
+.head_title4{
+	width: 100%;
+	height: 6px;
+	float: right;
+	position: absolute; /*绝对定位,使用top，right，bottom，left等属性进行绝对定位*/
+	bottom: 0px;
+	right: 0px;
+	/*margin-top: 4px;*/
+	background-color: #bd0a05;
+}
+.sphead_title{ /*时事新闻、时政要闻、共同关注*/
+	color: white;
+	line-height: 35px; /*设置行高为div高度,上下垂直居中*/
+}
+.head_picture{
+	width: 100%;
+	height: 280px;
+	margin-top: 3px;
+}
+.head_picture1{
+	width: 143px;
+	height: 260px;
+	float: left;
+}
+.head_picture2{
+	width: 156px;
+	height: 260px;
+	margin-left: 21px;
+	float: left;
+}
+.head_picture3{
+	width: 53px;
+	height: 261px;
+	margin-left: 21px;
+	float: left;
+}
+
+
+/*局内动态*/
+.centre_dynamic{
+	width: 100%;
+	height: 375px;
+}
+.dynamic_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #ab0f0a;
+}
+.dynamic_line_left{
+	width: 3px;
+	height: 330px;
+	float: left;
+	background-color: #ab0f0a;
+}
+.dynamic_line_right{
+	width: 3px;
+	height: 330px;
+	margin-left: 99.4%;
+	background-color: #ab0f0a;
+}
+.dynamic_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #ab0f0a;
+}
+.dynamic_text{
+	width: 90%;
+	height: 80%;
+	margin-left: 8px;
+	padding-top: 15px;
+	float: left;
+}
+.text_1C,.text_2C{ 
+	font-weight: bold;
+	font-family: "宋体";
+}
+.dynamic_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+	margin-bottom: 1px;
+}
+
+
+/*机关建设*/
+.centre_build{
+	width: 100%;
+	height: 375px;
+	margin-top: 13px;
+}
+.build_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #ab0f0a;
+}
+.build_line_left{
+	width: 3px;
+	height: 330px;
+	float: left;
+	background-color: #ab0f0a;
+}
+.build_line_right{
+	width: 3px;
+	height: 330px;
+	margin-left: 99.4%;
+	background-color: #ab0f0a;
+}
+.build_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #ab0f0a;
+}
+.build_text{
+	width: 95%;
+	height: 80%;
+	margin-left: 8px;
+	padding-top: 15px;
+	float: left;
+}
+.text_1C,.text_2C,.text_3C,.text_4C{ 
+	font-weight: bold;
+	font-family: "宋体";
+}
+.build_text1,.build_text2{
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+.build_text3,.build_text4{
+	width: 50%;
+	height: 50%;
+	margin-top: 5px;
+	float: left;
+}
+.build_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+	margin-bottom: 1px;
+}
+.li_maintextCH{
+	height: 30px; /*设置行高度*/
+	white-space:nowrap;  /*规定文本中的内容不进行换行*/
+	width: 205px;
+	text-overflow: ellipsis; /*当对象内文本溢出时显示省略标记（...）*/
+	overflow: hidden; /*把多出的地方隐藏掉*/
+	list-style-position: inside; /*列表项目标记放置在文本以内，且环绕文本根据标记对齐*/
+}
+
+
+/*党建动态*/
+.centre_party{
+	width: 100%;
+	height: 295px;
+	margin-top: 13px;
+}
+.party_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #ab0f0a;
+}
+.party_line_left{
+	width: 3px;
+	height: 250px;
+	float: left;
+	background-color: #ab0f0a;
+}
+.party_line_right{
+	width: 3px;
+	height: 250px;
+	margin-left: 99.4%;
+	background-color: #ab0f0a;
+}
+.party_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #ab0f0a;
+}
+.party_text{
+	width: 90%;
+	height: 80%;
+	margin-left: 8px;
+	padding-top: 15px;
+	float: left;
+}
+
+
+/*廉政园地*/
+.centre_politics{
+	width: 100%;
+	height: 228px;
+	margin-top: 13px;
+}
+.politics_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #ab0f0a;
+}
+.politics_line_left{
+	width: 3px;
+	height: 183px;
+	float: left;
+	background-color: #ab0f0a;
+}
+.politics_line_right{
+	width: 3px;
+	height: 183px;
+	margin-left: 99.4%;
+	background-color: #ab0f0a;
+}
+.politics_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #ab0f0a;
+}
+.politics_text{
+	width: 95%;
+	height: 80%;
+	margin-left: 8px;
+	padding-top: 15px;
+	float: left;
+}
+.text_1C,.text_2C,.text_3C,.text_4C{ 
+	font-weight: bold;
+	font-family: "宋体";
+}
+.politics_text1,.politics_text2{
+	width: 50%;
+	height: 38%;
+	float: left;
+}
+.politics_text3,.politics_text4{
+	width: 50%;
+	height: 38%;
+	margin-top: 5px;
+	float: left;
+}
+.politics_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+	margin-bottom: 1px;
+}
+
+
+
+
+/*公共元素样式*/
+.textCentre{
+	margin-top: 10px;
+	margin-left: 20px;
+	line-height: 25px; /*行高等于div高度,文本垂直居中*/
+	color: white;
+	float: left;
+}
+
+.smoreC{
+	padding-top: 24px;
+	padding-left: 450px;
+	
+}
+.moreC{
+	color: white;
+	font-size: small;
+}
+
+.li_maintextC{
+	height: 30px; /*设置行高度*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

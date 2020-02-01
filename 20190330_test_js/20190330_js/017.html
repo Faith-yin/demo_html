@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function testSet(){
+				//获取文本框中的内容
+				var n1=document.getElementById("n1").value;
+				//获取div模块
+				var d01=document.getElementById("d01");
+				//将文本框中的内容赋给div
+				d01.innerHTML=n1;
+			}	
+		</script>
+	</head>
+	<body>
+		<input id="n1" />
+		
+		<button onclick="testSet()">set</button>
+		<div id="d01" style="width: 100px;height: 100px;background-color: chocolate;"></div>
+		
+	</body>
+</html>

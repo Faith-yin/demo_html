@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>渐变、过渡动画</title>
+		<style type="text/css">
+			.btn {
+				/*将行内元素转换成块状元素才能设置宽高*/
+				display: block;
+				width: 250px;
+				height: 60px;
+				border: 1px solid #000;
+				border-radius: 10px;
+				margin: 50px auto;
+				/*先设置背景图再设置渐变*/
+				background-image: url(../img/paopao.png), -webkit-linear-gradient(top,#67BCFD,#1979C4);
+				text-align: center;
+				text-decoration: none;
+				line-height: 60px;
+				font-size: 30px;
+				font-weight: bold;
+				color: #fff;
+				/*过渡:参数含义-参与过渡的属性，完成时间，缓冲描述，延迟时间*/
+				transition: all 5s linear 1s;
+			}
+			/*background-position和background-color可以参与过渡*/
+			.btn:hover {
+				background-position: right bottom;
+			}
+		</style>
+	</head>
+	<body>
+		<!--用a标签模仿按钮制作-->
+		<a href="" class="btn">注册</a>
+		
+		<div>
+			原图是：<br />
+			<img src="../img/按钮.png" />
+		</div>
+		
+		
+	</body>
+</html>

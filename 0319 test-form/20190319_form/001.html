@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test001</title>
+	</head>
+	<body>
+		<!--表单标签，表单需要提交的页面-->
+		<form action="xxxxx"> 
+			<table>
+				<tr>
+					<td>用户名：</td>
+					<!--文本框，提示信息-->
+					<td><input type="text" placeholder="请输入用户名"/></td>  
+				</tr>
+				<tr>
+					<td>密码：</td>
+					<!--密码框，提示信息-->
+					<td><input type="password" placeholder="请输入密码"/></td>  
+				</tr>
+				
+				<tr>
+					<td>性别：</td>
+					<td>
+						<!--单选框，value是提交给页面的值，默认选中-->
+						<input type="radio" name="gender" value="male" checked="checked"/>男
+						<!--单选框，value是提交给页面的值-->
+						<input type="radio" name="gender" value="female" />女
+					</td>
+				</tr>
+				<tr>
+					<td>爱好</td>
+					<td>
+						<!--复选框，value是提交给页面的值，默认选中-->
+						<input type="checkbox" value="read" />读书
+						<!--复选框，value是提交给页面的值-->
+						<input type="checkbox" value="swim" />游泳
+						<!--复选框，value是提交给页面的值-->
+						<input type="checkbox" value="run" />跑步
+						<!--复选框，value是提交给页面的值-->
+						<input type="checkbox" value="music" />音乐
+					</td>
+				</tr>
+				
+				<tr>
+					<td>信息来源：</td>
+					<td>
+						<select name="from">  <!--下拉列表标签，名字-->
+							<!--列表选项，提交值，默认选中-->
+							<option value="1" selected="selected">网络</option>    
+							<option value="2">报纸</option>
+							<option value="3">电视</option>
+							<option value="4">朋友介绍</option>
+							<option value="5">其他</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>照片：</td>
+					<td><input type="file"</td>  <!--上传照片-->
+				</tr>
+				
+				<tr>
+					<td>备注</td>
+					<td>
+						<!--多行文本框，所占行数，列数-->
+						<textarea name="descx" rows="5" cols="20"></textarea>
+					</td>
+				</tr>
+				
+				<tr align="center">   <!--行内文本居中-->
+					<td colspan="2">  <!--合并2列-->
+						<input type="submit" value="登录" /> <!--提交按钮-->
+						<input type="reset" value="取消" />  <!--取消按钮-->
+					</td>
+				</tr>
+				
+				
+			</table>
+		</form>
+		
+		
+		
+		
+	</body>
+</html>

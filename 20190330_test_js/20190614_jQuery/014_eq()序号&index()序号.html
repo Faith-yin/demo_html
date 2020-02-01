@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>014</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.box {
+				width: 700px;
+				height: 200px;
+				margin: 10px auto;
+				border: 1px solid #000000;
+			}
+			p {
+				width: 150px;
+				height: 150px;
+				margin: 25px 5px;
+				float: left;
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="box1">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p class="teshu">我是特殊</p>
+		</div>
+		<div class="box" id="box2">
+			<p></p>
+			<p></p>
+			<p class="teshu">我是特殊  我要变紫</p>
+			<p></p>
+		</div>
+		<div class="box" id="box3">
+			<p class="teshu">我是特殊  我要变蓝</p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			//eq()：同类型的排名(不一定是在亲兄弟之间的排名)
+			$("p").eq(6).css("background-color","purple")
+			$(".teshu").eq(2).css("background-color","blue")
+			
+			
+			//index()：亲兄弟的排名(不管类型，只在亲兄弟之间的排名)
+			/*$("p").click(function() {
+				console.log($(this).index());
+			})*/
+			
+			$(".teshu").click(function() {
+				console.log($(this).index());
+			})
+		</script>
+	</body>
+</html>

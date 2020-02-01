@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			for(var i=1;i<=10;i++)
+			{
+				document.write("Hello,World!"+"&nbsp;"+"&nbsp;"+"&nbsp;")
+			}
+			
+			
+			
+			var sum=0;
+			for(var i=1;i<=100;i++)
+			{
+				sum=sum+i;
+				//document.write(sum+"<br>");  //输出每次sum的值并换行
+			}
+			alert(sum);   //建立提示窗口显示sum最终的值
+			
+			
+			for(var i=1;i<=20;i++)
+			{
+				if(i%2!=0){
+					continue; //跳过当次循环，进行下一次循环
+					break; //结束循环语句
+				}
+				document.write("<br />"+i+"<br />")
+			}	
+		</script>
+		
+		<img id="i01" src="../img/H5常用字符输出.png" />
+		
+		
+	</body>
+</html>

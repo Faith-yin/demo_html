@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			#d01{
+				background-color: coral;
+			}
+			#d02{
+				background-color: deeppink;
+			}
+			#d03{
+				background-color: gold;
+			}
+		</style>
+		
+		<script type="text/javascript">
+			
+			function testSet(obj){//定义形参obj，用于传递div的id值
+				var d01=document.getElementById("d01").innerHTML;
+				//document.getElementById(obj).innerHTML=d01;
+				//将div（d01）中取得的内容赋值给obj
+				obj.innerHTML=d01;
+			}
+			
+			function testClear(obj){
+				//document.getElementById(obj).innerHTML="";
+				//鼠标移走之后，将div(obj)赋值为空
+				obj.innerHTML="";
+			}
+		</script>
+	</head>
+	<body>
+		<div id="d01">Hello,DIV!</div>
+		<!--鼠标悬停事件，鼠标移走事件；this指当前触发函数的参数赋给obj-->
+		<div id="d02" onmousemove="testSet(this)" onmouseout="testClear(this)"></div>
+		<div id="d03" onmousemove="testSet(this)" onmouseout="testClear(this)"></div>
+		
+		<img src="../img/window对象常用事件.png" width="900px" height="500px" />
+		
+	</body>
+</html>

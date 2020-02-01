@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function testWeb(){
+				//打印此文本(清除页面原先内容，以显示此内容)
+				document.write("<h2>5秒后自动跳转至百度...</h2>")
+				//5s后跳转指定页面
+				setTimeout("location.href='http://www.baidu.com'",5000);
+			}
+			
+			//0s之后(立即执行)调用testWeb函数(只调用一次)
+			setTimeout("testWeb()",0);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+}
+
+/*通栏  版心*/
+.nav {
+	width: 1519.2px;
+	height: 30.8px;
+	background-color: #e3e4e5;
+}
+.navBar {
+	width: 1190px;
+	height: 30px;
+	margin: auto;
+	line-height: 30px;
+	font-size: 12px;
+	color: #999;
+}
+
+/*左侧北京部分*/
+.navLeft {
+	width: 57.6px;
+	height: 30.8px;
+	margin-top: 0.8px;
+	margin-left: 200px;
+	float: left;
+}
+.navLeft:hover {
+	background-color: #fefefe;
+}
+.iconBeijing {
+	height: 22px;
+	margin: 4px 4px 0px 4px;
+	float: left;
+}
+
+/*右侧列表部分*/
+.navRight {
+	width: 717px;
+	height: 30px;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: right;
+}
+.navRight li {
+	padding: 0 11px;
+	float: left;
+	list-style: none; /*去掉标签菜单前面的点*/
+}
+.navRight .line {
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin: 10px 1px 0 1px;
+	padding: 0;
+}
+.navRight a:link {
+	text-decoration: none;
+}
+.navRight a:hover {
+	color: #e33333;
+}
+.register,
+.purchase {
+	color: #e33333;
+}
+.login,
+.order,
+.myJD,
+.member {
+	color: #999;
+}
+.liHover:hover {
+	background-color: #fefefe;
+}
+.down {
+	float: right;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

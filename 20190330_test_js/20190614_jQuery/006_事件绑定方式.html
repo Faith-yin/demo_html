@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>006</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#box {
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="btn">点击变化</button>
+		<div class="box" id="box"></div>
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			/*
+			*/
+			
+			/*使用第一种方式添加点击事件：
+			        第一个参数表示事件类型
+			        第二个参数表示匿名函数*/
+			/*$("#btn").on("click",function(){
+				//css()的特殊用法
+				$("#box").css("width","+=50px");
+			})*/
+			
+			/*使用第二种绑定方式添加点击事件：
+				参数表示匿名函数*/
+			$("#btn").click(function(){
+				$("#box").css("width","+=50px");
+			})
+		</script>
+	</body>
+</html>

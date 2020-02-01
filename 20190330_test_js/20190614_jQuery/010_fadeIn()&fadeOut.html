@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>010</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.box {
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="btn1">fadeIn()</button>
+		<button class="btn2">fadeOut()</button>
+		<button class="btn3">fadeIn(5000)</button>
+		<button class="btn4">fadeOut(5000)</button>
+		<button class="btn5">fadeToggle()</button>
+		<button class="btn6">fadeToggle(5000)</button>
+		<div class="box"></div>
+		
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			/*fadeIn():只有当元素的状态是display:none时候才能调用,当调用该方法时,元素的透明度opacity
+			 * 从0变为1瞬间变为0,最终状态是display:block   参数时间默认4000ms
+			  fadeOut():刚好相反 
+			*/
+			
+			//给btn1添加点击事件
+			$(".btn1").click(function() {
+				$(".box").fadeIn();
+			})
+			
+			//给btn2添加点击事件
+			$(".btn2").click(function() {
+				$(".box").fadeOut();
+			})
+			
+			//给btn3添加点击事件
+			$(".btn3").click(function() {
+				$(".box").fadeIn(5000);
+			})
+			
+			//给btn4添加点击事件
+			$(".btn4").click(function() {
+				$(".box").fadeOut(5000);
+			})
+			
+			//给btn5添加点击事件
+			$(".btn5").click(function() {
+				$(".box").fadeToggle();
+			})
+			
+			//给btn6添加点击事件
+			$(".btn6").click(function() {
+				$(".box").fadeToggle(5000);
+			})
+			
+		</script>
+	</body>
+</html>

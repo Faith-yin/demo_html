@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var c=1;
+			
+			function showCount(){
+				//document.write(c);
+				document.getElementById("d01").innerHTML=c;
+				c++;
+			}
+			
+			var inter;
+			
+			function testStart(){
+				//每隔一段时间(1000ms)调用一次showCount函数
+				inter=setInterval("showCount()",1000);
+			}
+			
+			function testStop(){
+				//清除当前参数变化
+				clearInterval(inter);
+			}
+		</script>
+		
+		
+		<button onclick="testStart()">start</button>
+		<button onclick="testStop()">stop</button>
+		<div id="d01"></div>
+		
+		
+		<img src="../img/定时函数.png" width="700px" height="500px" />
+		
+	</body>
+</html>

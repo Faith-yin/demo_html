@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>008</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			#box {
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+				/*此元素不会被显示*/
+				display: none;
+			}
+			
+			#box2 {
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+				/*此元素不会被显示*/
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<button id="btn1">slideDown()</button>
+		<button id="btn2">slideUp()</button>
+		<button id="btn3">slideDown(5000)</button>
+		<button id="btn4">slideUp(5000)</button>
+		<button id="btn5">slideToggle</button>
+		<button id="btn6">slideToggle(5000)</button>
+		<div class="box" id="box"></div>
+		
+		<div class="box2" id="box2"></div>
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			/*slideDown():只有当元素的状态是display:none时候才能调用,当调用该方法时,元素的height瞬间变为0,
+						然后慢慢的以动画的形式变到初始height,最终状态是display:block  参数时间默认4000ms
+			  slideUp():刚好相反 
+			*/
+			
+			//给btn1添加点击事件
+			$("#btn1").click(function(){
+				$("#box").slideDown();
+			})
+			
+			//给btn2添加点击事件
+			$("#btn2").click(function(){
+				$("#box").slideUp();
+			})
+			
+			//给btn3添加点击事件
+			$("#btn3").click(function(){
+				$("#box").slideDown(5000);
+			})
+			
+			//给btn4添加点击事件
+			$("#btn4").click(function(){
+				$("#box").slideUp(5000);
+			})
+			
+			//给btn5添加点击事件
+			$("#btn5").click(function(){
+				$("#box").slideToggle();
+			})
+			
+			//给btn6添加点击事件
+			$("#btn6").click(function(){
+				$("#box").slideToggle(5000);
+			})
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动画</title>
+		<style type="text/css">
+			.box {
+				width: 200px;
+				height: 200px;
+				background-color: #eee;
+				/*调用动画,参数(5——7可省略)含义-
+				 1、动画名称
+				 2、动画完成时间
+				 3、动画描述(linear ease ... 可在网页编辑器中设置)
+				 4、延迟时间
+				 5、动画的次数(默认1次，infinite重复不停止)
+				 6、补全反方向动画alternate
+				 7、保持最后一帧动画forwards(不设置默认恢复css样式)*/
+        animation: donghua 3s ease 1s 3 alternate forwards;
+				-webkit-animation: donghua 3s ease 1s 3 alternate forwards;
+			}
+			.box2 {
+				width: 200px;
+				height: 200px;
+				background-color: #eee;
+				/*调用动画*/
+        animation: donghua2 3s linear 0s infinite;
+				-webkit-animation: donghua2 3s linear 0s infinite;
+			}
+			
+			
+			/*定义动画 两个状态*/
+			@-webkit-keyframes donghua{
+				from{
+					width: 200px;
+					background-color: #eee;
+				}
+				to{
+					width: 700px;
+					background-color: blueviolet;
+				}
+			}
+			
+			/*定义动画 百分比格式*/
+			@-webkit-keyframes donghua2{
+				0% {
+					width: 200px;
+					height: 200px;
+					background-color: #eee;
+				}
+				30% {
+					width: 400px;
+					height: 200px;
+					background-color: orange;
+				}
+				60% {
+					width: 600px;
+					height: 200px;
+					background-color: blueviolet;
+				}
+				90% {
+					width: 800px;
+					height: 200px;
+					background-color: brown;
+				}
+				100% {
+					width: 1300px;
+					height: 200px;
+					background-color: red;
+				}
+			}
+			
+			div:hover {
+				/*动画暂停播放*/
+				-webkit-animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box2"></div>
+	</body>
+</html>

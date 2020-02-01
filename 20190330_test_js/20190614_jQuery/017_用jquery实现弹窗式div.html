@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>019：jquery实现弹窗式div</title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+	        .box {
+	            position: fixed;
+	            width: 100%;
+	            height: 100%;
+	            background: rgba(0,0,0,0.2);
+	            display: none;
+	        }
+	        .box1 {
+	            width: 500px;
+	            height: 500px;
+	            /*相对于浏览器窗口的定位*/
+	            position: fixed;
+	            left: 50%;
+	            top: 25%;
+	            margin-left: -250px;
+	            border: 1px solid #000000;
+	        }
+
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		
+		
+		<div class="box">
+	        <div class="box1">
+	            <a href="javascript:;" onclick="jQuery('.box').hide()" class="close">关闭</a>
+	        </div>
+	    </div>
+	    <a href="javascript:;" onclick="jQuery('.box').show()" class="show">显示</a>
+	    
+	</body>
+</html>

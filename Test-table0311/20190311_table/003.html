@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>test001</title>
+	</head>
+	<body> 
+		<!--表的建立；表格居中，表格边线的粗细，文本与表格之间的内左上边距，外边框与内边框间距，表格宽度-->
+		<table align="center" border="1" cellpadding="5" cellspacing="0" width="500px">  
+
+			<thead>     <!--固定表格标题部分（与代码所在位置无关）-->
+				<tr align="center" bgcolor="chocolate">        <!--第一行；行内文本居中，行内背景色-->
+				    <td><font color="wheat">姓名</font></td>       <!--第 一行第一列；内部文本颜色-->
+				    <td><font color="wheat">四级成绩</font></td>    <!--第一行第二列-->
+				    <td><font color="wheat">六级成绩</font></td>    <!--第一行第三列-->
+			    </tr>
+			</thead>
+			
+			<tbody>   <!--固定表格主体部分--> 
+				<!--第二行，行内文本居中，当鼠标放上去时显示红色，当鼠标离开时显示白色-->
+				<tr align="center" onmouseover="this.bgColor='red'" onmouseleave="this.bgColor='white'">
+				    <td>李一</td>
+				    <td>426</td>
+				    <td>430</td>
+			    </tr>
+			    <!--第三行，行内文本居中，当鼠标放上去时显示红色，当鼠标离开时显示白色-->
+			    <tr align="center" onmouseover="this.bgColor='red'" onmouseleave="this.bgColor='white'">
+				    <td>于二</td>
+				    <td>500</td>
+				    <td>490</td>
+			    </tr>
+			    <!--第四行，行内文本居中，当鼠标放上去时显示红色，当鼠标离开时显示白色-->
+			    <tr align="center" onmouseover="this.bgColor='red'" onmouseleave="this.bgColor='white'"> 
+				    <td>张三</td>
+				    <td>600</td>
+				    <td>500</td>
+			    </tr>
+			</tbody>
+			
+		</table>
+		
+	</body>
+</html>

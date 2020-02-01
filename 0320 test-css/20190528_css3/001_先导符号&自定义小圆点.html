@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>先导符号(before,after)的应用：自定义小圆点</title>
+		
+		<style type="text/css">
+			.box {
+				width: 400px;
+				border: 1px solid #000;
+				margin:  auto;
+			}
+			.box ul {
+				padding-left: 0;
+			}
+			.box ul li {
+				height: 50px;
+				line-height: 50px;
+				font-size: 20px;
+				list-style: none;
+			}
+			.box ul li a {
+				display: block;
+				padding-left: 30px;
+				position: relative;
+			}
+			.box ul li a::before {
+				content: "";
+				position: absolute;
+				left: 10px;
+				top: 20px;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #eee;
+			}
+			.box ul li a:hover {
+				color: orange;
+			}
+			.box ul li a:hover::before {
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				<li><a href="">新闻新闻新闻新闻新闻新闻新闻</a></li>
+				
+			</ul>
+		</div>
+		
+	</body>
+</html>

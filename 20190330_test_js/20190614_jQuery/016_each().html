@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>016</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.box {
+				width: 500px;
+				margin: 50px auto;
+				overflow: hidden;
+				border: 1px solid #000000;
+				margin-bottom: 10px;
+			}
+			p {
+				float: left;
+				width: 100px;
+				height: 100px;
+				margin-right: 10px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		<div class="box">
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+		</div>
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			//each()：表示“每一个”，用于循环、遍历到的每一个元素。接收一个参数：匿名函数
+			//让每一个div中的第一个儿子颜色改变
+			/*$("div").each(function() {
+				$(this).children().eq(0).css("background-color","mediumpurple")
+			})*/
+			
+			//让每一个div中的奇数儿子颜色改变
+			$("div").each(function() {
+				$(this).children("p:odd").css("background-color","dodgerblue")
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function testBaidu(){
+				//表示跳转到百度网页
+				window.location.href="http://www.baidu.com";
+			}
+			
+			function test(){
+				//表示跳转到test001.html页面中
+				window.location.href="test001.html";
+			}
+			
+			var win;
+			function testOpen(){
+				//表示打开test001.html页面
+				win=window.open("test001.html");
+			}
+			
+			function testClose(){
+				//表示关闭test001.html页面
+				window.close(win);
+			}
+		</script>
+		
+	</head>
+	<body>
+		<button onclick="testBaidu()">进入百度</button>
+		
+		<button onclick="test()">跳转到test001页面</button>
+		
+		<button onclick="testOpen()">打开test001页面</button>
+		
+		<button onclick="testClose()">关闭test001页面</button>
+		
+		<br />
+		<br />
+		<img src="../img/window对象常用方法.png" width="450px" height="300px" />
+	</body>
+</html>

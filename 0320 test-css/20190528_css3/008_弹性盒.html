@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹性盒(不设置浮动而使其并排显示)</title>
+		<style type="text/css">
+			.box {
+				width: 100%;
+				/*省略高度*/
+				/*父盒子设置为弹性盒容器*/
+				display: flex;
+				background-color: #eee;
+			}
+			.box p {
+				/*子盒子利用flex设置宽度*/
+				height: 200px;
+				border: 1px solid #000;
+				background-color: orange;
+				/*设置子盒子占父盒子的份数*/
+				flex: 1;
+			}
+			.box p:nth-child(2) {
+				flex: 2;
+			}
+			.box p:nth-child(3) {
+				flex: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p>1份</p>
+			<p>2份</p>
+			<p>3份</p>
+		</div>
+		
+	</body>
+</html>

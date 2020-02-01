@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+			//此循环用于换行
+			for(var j=1;j<=5;j++){ 
+				//此循环用于打印空格
+				for(var i=1;i<=5-j;i++){  
+					document.write("&nbsp;");
+				}
+				//此循环用于打印*
+				for(var k=1;k<=2*j-1;k++){ 
+					document.write("*");
+				}
+				document.write("<br />");
+			}
+			
+//			横向找规律:行   列   空格
+//			          1   1   4
+//			          2   3   3
+//			          3   5   2
+//			          4   7   1
+//			          5   9   1
+			          
+	
+		</script>
+		
+		
+	</body>
+</html>

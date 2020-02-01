@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function testChange(obj){
+				var m1=document.getElementById("m1");
+				if(obj.checked){
+					//用js书写css样式，加style关键字
+					m1.style.display="none";
+					//document.getElementById("m1").style.display="none";
+				}else{
+					//用js书写css样式，加style关键字
+					m1.style.display="block";
+					//document.getElementById("m1").style.display="block";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<!--选择类型的框，onchange属性为√与不√-->
+		<input type="checkbox" onchange="testChange(this)" />隐藏
+		<br />
+		<img id="m1" src="../img/a02.jpg" />
+	</body>
+</html>

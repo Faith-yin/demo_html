@@ -1,0 +1,296 @@
+.bodyLeft{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+/*情景模式*/
+.left_model{ 
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #2e4e92;
+}
+
+
+/*公告栏*/
+.left_board{ 
+	width: 100%;
+	height: 250px;
+	margin-top: 2px;
+}
+.board_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #2e4e92;
+}
+.board_line_left{
+	width: 3px;
+	height: 205px;
+	float: left;
+	background-color: #2e4e92;
+}
+.board_line_right{
+	width: 2px;
+	height: 205px;
+	margin-left: 99.2%;
+	background-color: #2e4e92;
+}
+.board_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #2e4e92;
+}
+.board_text{ 
+	width: 90%;
+	height: 75%;
+	padding-top: 15px;
+	float: left;
+}
+.text_edu{ /*教育天地*/
+	margin-left: 8px;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.board_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+}
+
+
+/*稽查专栏*/
+.left_check{ 
+	width: 100%;
+	height: 805px;
+	margin-top: 5px;
+	
+}
+.check_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #473b77;
+}
+.check_line_left{
+	width: 3px;
+	height: 760px;
+	float: left;
+	background-color: #473b77;
+}
+.check_line_right{
+	width: 2px;
+	height: 760px;
+	margin-left: 99.2%;
+	background-color: #473b77;
+}
+.check_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #473b77;
+}
+.check_text{
+	width: 90%;
+	height: 90%;
+	padding-top: 15px;
+	float: left;
+}
+.text_1,.text_2,.text_3,.text_4{ 
+	margin-left: 8px;
+	font-weight: bold;
+	font-family: "宋体";
+	float: left;
+}
+.check_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+	margin-bottom: 1px;
+}
+
+
+/*快速链接*/
+.left_link{ 
+	width: 100%;
+	height: 225px;
+	margin-top: 5px;
+}
+.link_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #473b77;
+}
+.link_line_left{
+	width: 3px;
+	height: 180px;
+	float: left;
+	background-color: #473b77;
+}
+.link_line_right{
+	width: 2px;
+	height: 180px;
+	margin-left: 99.2%;
+	background-color: #473b77;
+}
+.link_line_bottom{ 
+	width: 100%;
+	height: 3px;
+	background-color: #473b77;
+}
+.link_text{
+	width: 95%;
+	height: 75%;
+	float: left;
+	margin-left: 7px;
+	white-space:nowrap;  /*规定文本中的内容不进行换行*/
+	font-weight: bold;
+	font-family: "宋体";
+	margin-top: 10px;
+}
+
+/*计算机园地*/
+.left_computer{ 
+	width: 100%;
+	height: 145px;
+	margin-top: 5px;
+}
+.computer_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #335cb6;
+}
+.computer_line_left{
+	width: 3px;
+	height: 100px;
+	float: left;
+	background-color: #335cb6;
+}
+.computer_line_right{
+	width: 2px;
+	height: 100px;
+	margin-left: 99.2%;
+	background-color: #335cb6;
+}
+.computer_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #335cb6;
+}
+.computer_text{ 
+	width: 90%;
+	height: 60%;
+	padding-top: 10px;
+	float: left;
+}
+.computer_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+}
+
+
+/*下载天地*/
+.left_download{ 
+	width: 100%;
+	height: 145px;
+	margin-top: 5px;
+}
+.download_title{
+	width: 100%;
+	height: 45px;
+	border-radius: 5px 5px 0 0 ;
+	background-color: #335cb6;
+}
+.download_line_left{
+	width: 3px;
+	height: 100px;
+	float: left;
+	background-color: #335cb6;
+}
+.download_line_right{
+	width: 2px;
+	height: 100px;
+	margin-left: 99.2%;
+	background-color: #335cb6;
+}
+.download_line_bottom{
+	width: 100%;
+	height: 3px;
+	background-color: #335cb6;
+}
+.download_text{ 
+	width: 90%;
+	height: 60%;
+	padding-top: 10px;
+	float: left;
+}
+.download_maintext{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 14px;
+	padding-left: 30px;
+}
+
+
+/*访问者部分*/
+.left_visitor{
+	font-size: ;
+	width: 100%;
+	height: 21px;
+	margin-top: 10px;
+}
+.left_visitor1{
+	margin-left: 25px;
+	float: left;
+}
+.left_visitor2{
+	margin-left: 3px;
+	margin-right: 3px;
+	width: 80px;
+	height: 21px;
+	text-align: center;
+	color: #33ffff; /*文本颜色*/
+	float: left;
+	background-color: black;
+}
+.spleft_visitor2{ 
+	letter-spacing: 5px;  /*设置文本之间距离*/
+}
+.left_visitor3{
+	float: left;
+}
+
+
+
+
+
+/*公共元素样式*/
+.textLeft{
+	margin-top: 10px;
+	margin-left: 20px;
+	line-height: 25px; /*行高等于div高度,文本垂直居中*/
+	color: white;
+	float: left;
+}
+
+.smoreL{
+	padding-top: 24px;
+	padding-left: 200px;
+	
+}
+.moreL{
+	color: white;
+	font-size: small;
+}
+
+.li_maintext{
+	height: 30px; /*设置行高度*/
+}
+
+

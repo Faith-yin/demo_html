@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>盒子阴影</title>
+		
+		<style type="text/css">
+			.box {
+				width: 200px;
+				height: 200px;
+				border: 1px solid #000;
+				margin: 50px auto;
+				font-size: 20px;
+				line-height: 30px;
+				position: relative;
+				overflow: hidden;
+			}
+			.box::after {
+				content: "查看更多...";
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				background-color: rgba(255,255,255,.8);
+				top: 200px;
+				text-align: center;
+				line-height: 200px;
+				color: burlywood;
+			}
+			.box:hover::after {
+				top: 0;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			<p>飞机上大家覅哦啊好酒店方恢复稍大和覅偶恢复IG斯蒂芬分公司卡接电话查看后方可室内场地</p>
+		</div>
+	</body>
+</html>

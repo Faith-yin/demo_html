@@ -1,0 +1,49 @@
+.headBr{
+	width: 990px;
+	height: 50px;
+	margin: auto;
+	background-color: #c21d15;
+}
+
+.br_home{
+	width: 83px;
+	height: 30px;
+	float: left;  /*元素靠左浮动对齐*/
+	background-color: #8d002c;
+	text-align: center; /*内部文本左右居中*/
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 7px;
+	padding-top: 7px;
+}
+.br_news,.br_dynamic,.br_build,.br_party,.br_edu,.br_culture,.br_politics,.br_check,.br_download{
+	width: 83px;
+	height: 30px;
+	float: left;
+	background-color: #8d002c;
+	text-align: center;
+	margin-right: 5px;
+	margin-top: 7px;
+	padding-top: 7px;
+}
+.br_computer{
+	width: 96px;
+	height: 30px;
+	float: left;
+	background-color: #8d002c;
+	text-align: center;
+	margin-top: 7px;
+	padding-top: 7px;
+}
+.text{
+	color: white;
+	font: 18px "楷体";
+	font-weight: bolder; /*字体加粗*/
+}
+.br_href{
+	color: white;
+	text-decoration: none;
+}
+.headBr a:hover{
+	text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test003</title>
+		
+		<style type="text/css">
+			input:focus{
+				border: red 1px solid; /*边框线颜色,像素,实线*/
+				background: darksalmon;
+			}
+			input[type='checkbox']:checked+span{ /*属性为checkbox,是选中状态,并且相邻的span格式设置*/
+				color: red;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		
+		<input /><br />
+		<input /><br />
+		<input />
+		
+		<hr />
+		<input type="checkbox" /><span>苹果</span><br />
+		<input type="checkbox" checked="checked" /><span>香蕉</span><br />
+		<input type="checkbox" /><span>草莓</span>
+	</body>
+</html>

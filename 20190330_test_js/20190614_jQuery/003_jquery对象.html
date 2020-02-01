@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>03.jquery对象</title>
+	</head>
+	<body>
+		<p class="p01">我是第一个p标签</p>
+		<p class="p02">我是第二个p标签</p>
+		<p class="p03">我是第三个p标签</p>
+		<p></p>
+		
+		
+		<!--引入jquery包-->
+		<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			//通过js获取第一个p的内部文本
+			var p1 = document.getElementsByTagName("p")[0];
+			console.log(p1.innerHTML);
+			
+			//将js对象转换成jquery对象，并改变内部文档
+			$(p1).html("今天天气真好");
+			
+			//将jquery对象转换成js对象
+			var p3 = document.getElementsByTagName("p")[2];
+			$(".p03")[0].innerHTML = "p标签";
+			
+			//通过jquery获取p元素内部文本，并改变内部文档
+			console.log($("p.p02").html());
+			
+			
+			
+		</script>
+	</body>
+</html>

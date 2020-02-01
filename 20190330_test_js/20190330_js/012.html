@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function testSum(){
+				//获取id为i01的框中的输入值，赋值给i01,
+				var i01=document.getElementById("i01").value;
+				var i02=document.getElementById("i02").value;
+				
+				//将获取到的值转换成浮点型数据
+				var num1=parseFloat(i01);
+				var num2=parseFloat(i02);
+				
+				//用于检查其参数是否是非数字
+				if(isNaN(num1)||isNaN(num2)){
+					alert("对不起，输入内容格式不对！")
+				}else{
+					alert("两数和："+(num1+num2));
+				}
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+		<input id="i01" />
+		<input id="i02" />
+		<!--建立按钮，增加点击事件-->
+		<button onclick="testSum()">进行求和</button>
+		
+	</body>
+</html>

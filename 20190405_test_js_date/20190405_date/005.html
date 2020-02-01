@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="d01"></div>
+		<script type="text/javascript">
+			function showWeb(){
+				//地址链接
+				location.href="http://baidu.com";
+			}
+			
+			var c=4;
+			function showTime(){
+				document.getElementById("d01").innerHTML=c;
+				c--;
+			}
+			
+			//5000ms(5s)之后执行showWeb函数。(只调用一次)
+			setTimeout("showWeb()",5000);
+			
+			//每隔1000ms(1s)调用showTime函数一次
+			setInterval("showTime()",1000);
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

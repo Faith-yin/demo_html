@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>008</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			img{
+				width: 200px;
+				height: 200px;
+			}
+			#m01{
+				position: absolute;/*绝对定位及其属性设置*/
+				top: 20px;
+				left: 20px;
+				z-index: 20;  /*调整元素定位时重叠层的上下位置,值大的层位于其值小的层上方*/
+			}
+			#m02{
+				position: absolute;
+				top: 40px;
+				left: 40px;
+				z-index: 100;
+			}
+			#m03{
+				position: absolute;
+				z-index: 5;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="m01" src="img/ID选择器.jpg"/><img id="m02" src="img/复合选择器.jpg"/><img id="m03" src="img/标签选择器.png"/>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+/*清除默认样式*/
+* {
+	padding: 0;
+	margin: 0;
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/*设置01样式*/
+.box {
+	width: 100%;
+	overflow: hidden;
+}
+.box p {
+	width: 33%;
+	height: 200px;
+	float: left;
+	background-color: green;
+}
+.box p:nth-child(2) {
+	width: 33%;
+	background-color: orange;
+}
+.box p:last-child {
+	background-color: blue;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css"> /*css代码标签*/
+			input+span{
+				color: black;
+				font-size: 12px;
+			}
+		</style>
+		
+		<script type="text/javascript"> /*js代码标签*/
+			function checkForm(){
+				//获取两个文本框中的内容
+				var uname=document.getElementById("uname").value;
+				var upass=document.getElementById("upass").value;
+				//判断两文本框中内容是否为空
+				if(uname==""||uname==null){
+					document.getElementById("nameSpan").innerHTML="<img src='../img/error.png'>用户名不能为空！";
+				}
+				if(upass==""||upass==null){
+					document.getElementById("passSpan").innerHTML="<img src='../img/error.png'>密码不能为空！";
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<table>  <!--表格-->
+			<tr> <!--表格第一行-->
+				<td>
+					<label>用户名：</label>
+				</td>
+				<td>
+					<input id="uname" type="text" placeholder="请输入用户名" />
+					<span id="nameSpan"></span>
+				</td>
+			</tr>
+			
+			<tr> <!--表格第二行-->
+				<td>
+					<label>密&nbsp;&nbsp;&nbsp;码：</label>
+				</td>
+				<td>
+					<input id="upass" type="text" placeholder="请输入6位密码" />
+					<span id="passSpan"></span>
+				</td>
+			</tr>
+			
+			<tr> <!--表格第三行-->
+				<td colspan="2">
+					<button onclick="checkForm()">登&nbsp;&nbsp;&nbsp;录</button>
+				</td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
